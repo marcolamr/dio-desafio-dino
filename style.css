@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #79caf9;
+}
+
+.mario {
+  width: 60px;
+  height: 60px;
+  background-image: url(mario.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.cannon-ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(cannon-ball.png);
+}
+
+.game-over {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+
+  to {
+    background-position: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  background-image: url(background-02.png);
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
